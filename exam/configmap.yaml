@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-configmap
+  namespace: test-namespace
+data:
+  httpd.conf: |
+    Listen 80
+    DocumentRoot var/www/html
